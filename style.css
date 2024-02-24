@@ -20,20 +20,46 @@ body{
 span{
     color: #000;   
 }
+#change-text{
+    transition: .5s;
+    font-weight: bold;
+}
+#color-specs{
+    transition: .5s;
+    font-size: 12px;
+}
 
 #change-btn{
     margin-top: 5%;
-    width: 80px;
-    height: 25px;
-    border: 1px solid black;
+    width: 90px;
+    height: 35px;
+    border: none;
     border-radius: 5rem;
-    background: white;
-    font-size: 14px;
+    background: black;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
     transition: .35s;
+    text-transform: uppercase;
 }
 
 #change-btn:hover{
     transform: scale(0.95);
-    background-color: rgb(155, 155, 155);
+    background: rgb(155, 155, 155);
     transition: .35s;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    padding: .25%;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+footer strong{
+    margin-left: .5%;
 }
